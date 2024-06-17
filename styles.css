@@ -68,20 +68,28 @@ h1 {
     color: black;
     padding: 8px 16px;
     text-decoration: none;
-    transition: background-color .3s;
+    transition: background-color 0.2s;
 }
 
 .pagination a.active {
-    background-color: black;
-    color: white;
-    border-radius: 5px;
+    background-color:black;
+    color:white; /* Adjust text color for better contrast */
+    border-radius: 0px;
+
+    
 }
 
 .pagination a:hover:not(.active) {
-    background-color: #ddd;
+    background-color:black;
+    border-radius: 0px;
+    color: white;
+}
+.pagination a:hover:not(.active),
+.pagination a:hover.active {
+    background-color:black;
+    color:white; 
     border-radius: 5px;
 }
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -127,17 +135,11 @@ h1 {
         /* max-width: 50%; */
         flex: 1 1 50%;
     }
-    .footer-column {
-        flex: 1 1 45%;
-    }
 }
 
 @media (max-width: 576px) {
     .column {
         /* max-width: 100%; */
-        flex: 1 1 100%;
-    }
-    .footer-column {
         flex: 1 1 100%;
     }
 }
@@ -208,6 +210,7 @@ li.dropdown{
 
 .footer-column  a:hover:not(.active){
     display: block;
+    background-color: white;
 }
 .blog-post span {
     display: inline-block;
@@ -240,10 +243,12 @@ li.dropdown{
     font-size: 0.9em;
     color: black; /* Màu sắc của phần văn bản */
 }
-/* cái ảnh the food men */
-
-@media (max-width: 576px) {
-    .about-img-container img {
-        max-width: 100%;
-    }
+hr {
+    border: 0;
+    height: 1px;
+    background: #dad5d5;
+    /* background-image: linear-gradient(to right, #ccc, #333, #ccc); tạo hiệu ứng đầu nhạt giữa đậm, r đuôi nhạt */
+    background-image:#dad5d5;
+    ;
+    margin: 20px 0; 
 }
