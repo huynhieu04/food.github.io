@@ -81,23 +81,26 @@ h1 {
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color 0.2s;
-    border-radius: 20%; /* tạo viền  */
+     /* tạo viền  */
 }
 
 .pagination a.active {
-    background-color: #ddd;
+    background-color: #d3d3d3;
     color: black; /* Adjust text color for better contrast */
-    border-radius: 0px;
+
 
     
 }
+.pagination a:hover{
+    background-color: #080808;
+    color: #fff;
+}
 
 
-.pagination a:hover:not(.active)
-{
-    background-color: black;
-    color: white;
-    border-radius: 10%;
+
+.about container i{
+    display: block;
+    padding: 10px 0;
 }
 .footer {
     display: flex;
@@ -130,11 +133,6 @@ h1 {
     background-color: #d3d3d3;
 
 }
-
-
-
-
-
 
 .footer h3 {
     margin-top: 0;
@@ -169,7 +167,7 @@ li.dropdown{
 .dropdown:hover .dropdown-content{
     display: block;
 }
-.about{
+.about {
     width: auto;
     text-align: center;
     padding: 20px 0;
@@ -216,11 +214,15 @@ li.dropdown{
 .blog-post span {
     display: inline-block;
     vertical-align: middle;
+    
 }
 .blog-post {
     display: flex;
     align-items: center;
     margin-bottom: 20px; /* Khoảng cách giữa các bài viết */
+}
+.blog-post .active{
+    border-bottom: solid 1px #ccc    ;
 }
 
 .blog-post img {
